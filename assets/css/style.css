@@ -6,7 +6,7 @@
     font-family: 'Poppins', sans-serif;
 }
 header{
-    background: url('/assets/images/head_bg.jpg');
+    background: url('../images/head_bg.jpg');
     background-position:center;
     height: 100vh;
     max-width: 100%;
