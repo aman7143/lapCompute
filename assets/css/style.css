@@ -19,6 +19,22 @@
     background-position: center;
     width: 100%;
 }
+#home_service{
+    background: url('../images/service.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+#home_contact{
+    background: url('../images/contact.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+
 .top-bar{
     height: 36px;
     width: 100%;
