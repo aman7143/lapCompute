@@ -1,29 +1,4 @@
 
-// // sticky navbar
-// $(window).scroll(function(){
-//     if($(this).scrollTop() > 50){
-//         $('nav').addClass('sticky')
-//         $('.menu-icon').addClass('sticky')
-//     } 
-//     else{
-//         $('nav').removeClass('sticky')
-//         $('.menu-icon').removeClass('sticky')
-//     }
-// });
-// // AOS animation
-// AOS.init({
-//     offset: 180,
-//     duration: 1200,    
-// });
-// // code for responsive menu
-// const hamburger = document.querySelector(".menu-icon");
-// const navLinks = document.querySelector(".nav-links");
-// hamburger.addEventListener("click", () =>{
-//     navLinks.classList.toggle('active');
-//     hamburger.classList.toggle('active');
-// });
-
-// text carousel
 var TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -80,3 +55,5 @@ var TxtRotate = function(el, toRotate, period) {
     css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
     document.body.appendChild(css);
   };
+
+  // toggle nav
