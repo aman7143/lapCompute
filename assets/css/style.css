@@ -8,7 +8,13 @@
 *{
     margin: 0;
     padding:0;
+
     box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    
 }
 li{
     list-style: none;
@@ -17,10 +23,12 @@ a{
     text-decoration: none;
 }
 
+
+/* Header section  */
 header{
     width: 100%;
     height: 100vh;
-    background: url(/assets/images/head_bg.jpg);
+    background: url('/assets/images/head_bg.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -118,5 +126,198 @@ nav ul li a:hover{
 }
 .typo{
     width: 75%;
-    padding: 0 30px;
+    padding: 0 20px;
+    color: #dee2e6;
+    font-family: 'Montserrat',sans-serif;
+}
+.typo h2{
+  font-size: 32px;
+  padding-bottom: 20px;
+}
+.typo p{
+    font-size: 18px;
+    padding-bottom: 42px;
+}
+.typo a{
+    background: #dee2e6;
+    color:#6c757d;
+    padding: 8px 12px;
+}
+
+.contact-form{
+    width: 70%;
+    background:rgba(0,0,0,0.2);
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.contact-form input, textarea{
+    height: 50px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255,0.4);
+    padding: 5px 2px;
+    color: #dee2e6;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 18px;
+    transition: all 1s ease;
+}
+.contact-form input:focus, textarea:focus{
+    border-bottom: 2px solid #dee2e6;
+}
+.full-name,.form-contact,.query{
+    width: 100%;
+}
+.full-name input[name='fname'],
+.full-name input[name='lname'],
+.form-contact input[name='phone'],
+.form-contact input[name='email']{
+    width: 48%;    
+}
+.query textarea[name='query']{
+    width: 97%;
+    height: 120px;
+    resize: none;
+    padding: 14px 0;
+}
+.submit{
+    text-align: right;
+    width: 97%;
+}
+
+.contact-form button{
+    padding: 8px 12px;
+    background: transparent;
+    border: 2px solid #dee2e6;
+    color: #dee2e6;
+    margin-top: 20px;
+    font-size: 18px;
+    transition: all 1s ease;
+}
+.contact-form button:hover{
+    background: #dee2e6;
+    color:#343a40;
+}
+
+/* About section */
+
+#about-us{
+    background-position: center;
+    background: url('/assets/images/white-abstract.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+    align-items: center;
+}
+.about-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 99%;
+    padding: 8px;
+}
+#about-us .title{
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+}
+#about-us .title p{
+    color:#6c757d;
+}
+#about-us .title h2{
+    color:#343a40;
+}
+.abtimg{
+    width: 40%;
+}
+.abtimg img{
+    width: 100%;
+}
+.abttxt{
+    width:40%;
+    text-align: center;
+    font-size: 18px;
+}
+.abttxt p{
+    letter-spacing: 1px;
+    color: #6c757d;
+    padding: 10px;
+}
+
+
+/* style for services section */
+#services{
+    width: 100%;
+    background: url('/assets/images/pattern.png');
+    
+}
+#services .title{
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+    padding: 20px 0;
+}
+#services .title h2{
+    color: #343a40;
+}
+#services .title p{
+    color: #6c757d;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 96%;
+    row-gap: 24px;
+    
+}
+.card{
+    width: 300px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.3s;
+}
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card .icon i{
+    font-size: 42px;
+    padding: 4px;
+    color: #06d6a0;
+}
+.card .title h3{
+    color: #343a40;
+    font-family: 'Montserrat',sans-serif;
+    padding: 5px 0;
+}
+.card .desc{
+    text-align: center;
+}
+.card .desc p{
+    color: #6c757d;
+    font-family: 'Montserrat',sans-serif;
+    width: 94%;
+}
+
+
+
+/* Footer Styling */
+footer{
+    background:#343a40;
+    color: #dee2e6;
+    width: 100%;
+    padding: 16px 10px;
+    margin-top: 20px;
+    display: none;
+}
+.footer-fluid-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
 }
