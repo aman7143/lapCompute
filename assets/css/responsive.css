@@ -1,0 +1,116 @@
+@media (max-width: 1024px) {
+    .hero .typo{
+        width: 100%;
+    }
+    .hero .typo h2{
+        font-size: 28px;
+    }
+    .hero .typo p{
+        font-size: 16px;
+    }
+    .typo a{
+        color: #343a40;
+    }
+    .contact-form{
+        width: 85%;
+    }
+    /* about section */
+    .abtimg{
+        width: 48%;
+    }
+    .abttxt{
+        font-size: 16px;
+        width: 52%;
+    }
+    
+    .form-container{
+        width: 75%;
+    }
+    .ctoa-typo{
+        width: 70%;
+    }
+}
+@media (max-width: 760px) {
+    
+    .form-container{
+        width: 85%;
+    }
+}
+@media (max-width: 700px){
+    .top-bar{
+      display: none;
+    }
+    nav{
+        display: none;
+    }
+    .contact-form,
+    .abtimg{
+        display: none;
+    }
+    .hero{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .typo{
+        width: 70%;
+        text-align: center;
+    }
+    .abttxt{
+        width: 100%;
+    }
+    .footer-item{
+        width: 80%;
+        padding: 0 30px;
+    }
+    .quick-links{
+        display: flex;
+        justify-content: space-between;
+    }
+    .ctoa-img{
+        display: none;
+    }
+    .ctoa-container{
+        justify-content: center;
+    }
+    .ctoa-typo{
+        width: 80%;
+        text-align: center;
+    }
+    .ctoa-buttons{
+        justify-content: center;
+    }
+
+}
+@media (max-width: 480px){
+    
+
+    /* contact */
+    .form-container{
+        width: 90%;
+    }
+    .form-container .full-name, .contact-details{
+        flex-direction: column;
+    }
+    .fname-group,
+    .lname-group,
+    .phone-group,
+    .email-group{
+        width: 100%;
+    }
+    /* footer */
+
+    .footer-item{
+        padding: 0;
+        width: 100%;
+    }
+    .ctoa-buttons{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .form-container button{
+        width: 100%;
+    }
+
+}
